@@ -1,0 +1,254 @@
+[gd_scene load_steps=38 format=2]
+
+[ext_resource path="res://characters/monobacansi (1).png" type="Texture" id=1]
+[ext_resource path="res://Node2D.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 27.6076, 44.3055 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "abajo"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 3, 2, 5, 4 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "arriba"
+length = 0.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 17, 18, 19, 20 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "arriba_idle"
+length = 0.3
+step = 1.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 16 ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 8, 7, 8, 10, 9, 10 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "der_idle"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.0146138 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 6 ]
+}
+
+[sub_resource type="Animation" id=7]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+
+[sub_resource type="Animation" id=8]
+length = 0.6
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 13, 12, 13, 15, 14, 15 ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "izq_idle"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.0146138 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 11 ]
+}
+
+[sub_resource type="AnimationNodeAnimation" id=10]
+animation = "abajo"
+
+[sub_resource type="AnimationNodeAnimation" id=11]
+animation = "arriba"
+
+[sub_resource type="AnimationNodeAnimation" id=33]
+animation = "arriba_idle"
+
+[sub_resource type="AnimationNodeAnimation" id=12]
+animation = "der"
+
+[sub_resource type="AnimationNodeAnimation" id=13]
+animation = "der_idle"
+
+[sub_resource type="AnimationNodeAnimation" id=34]
+animation = "idle"
+
+[sub_resource type="AnimationNodeAnimation" id=14]
+animation = "izq"
+
+[sub_resource type="AnimationNodeAnimation" id=28]
+animation = "izq_idle"
+
+[sub_resource type="AnimationNodeAnimation" id=15]
+animation = "stop_face"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=22]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=23]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=24]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=25]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=29]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=30]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=31]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=32]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=35]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=36]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=37]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=38]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=39]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=40]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=41]
+
+[sub_resource type="AnimationNodeStateMachine" id=26]
+states/abajo/node = SubResource( 10 )
+states/abajo/position = Vector2( 415, 292.962 )
+states/arriba/node = SubResource( 11 )
+states/arriba/position = Vector2( 415, -104 )
+states/arriba_idle/node = SubResource( 33 )
+states/arriba_idle/position = Vector2( 415, -13.5291 )
+states/der/node = SubResource( 12 )
+states/der/position = Vector2( 792, 94 )
+states/der_idle/node = SubResource( 13 )
+states/der_idle/position = Vector2( 615, 94 )
+states/idle/node = SubResource( 34 )
+states/idle/position = Vector2( 415, 193.844 )
+states/izq/node = SubResource( 14 )
+states/izq/position = Vector2( 47, 94 )
+states/izq_idle/node = SubResource( 28 )
+states/izq_idle/position = Vector2( 221, 94 )
+states/stop_face/node = SubResource( 15 )
+states/stop_face/position = Vector2( 415, 94 )
+transitions = [ "stop_face", "der_idle", SubResource( 22 ), "der_idle", "der", SubResource( 23 ), "der", "der_idle", SubResource( 24 ), "der_idle", "stop_face", SubResource( 25 ), "stop_face", "izq_idle", SubResource( 29 ), "izq_idle", "izq", SubResource( 30 ), "izq", "izq_idle", SubResource( 31 ), "izq_idle", "stop_face", SubResource( 32 ), "stop_face", "idle", SubResource( 35 ), "idle", "abajo", SubResource( 36 ), "abajo", "idle", SubResource( 37 ), "idle", "stop_face", SubResource( 38 ), "stop_face", "arriba_idle", SubResource( 39 ), "arriba_idle", "stop_face", SubResource( 40 ), "arriba_idle", "arriba", SubResource( 41 ) ]
+start_node = "stop_face"
+graph_offset = Vector2( -75.0958, 6.15015 )
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=27]
+
+[node name="Player 1" type="KinematicBody2D"]
+position = Vector2( 203.563, 64.7397 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 53.3936, 81.4252 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 54.061, 85.4298 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+hframes = 5
+vframes = 5
+frame = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/abajo = SubResource( 2 )
+anims/arriba = SubResource( 3 )
+anims/arriba_idle = SubResource( 4 )
+anims/der = SubResource( 5 )
+anims/der_idle = SubResource( 6 )
+anims/idle = SubResource( 7 )
+anims/izq = SubResource( 8 )
+anims/izq_idle = SubResource( 9 )
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 26 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource( 27 )
