@@ -142,26 +142,32 @@ animation = "abajo"
 [sub_resource type="AnimationNodeAnimation" id=11]
 animation = "arriba"
 
-[sub_resource type="AnimationNodeAnimation" id=33]
+[sub_resource type="AnimationNodeAnimation" id=12]
 animation = "arriba_idle"
 
-[sub_resource type="AnimationNodeAnimation" id=12]
+[sub_resource type="AnimationNodeAnimation" id=13]
 animation = "der"
 
-[sub_resource type="AnimationNodeAnimation" id=13]
+[sub_resource type="AnimationNodeAnimation" id=14]
 animation = "der_idle"
 
-[sub_resource type="AnimationNodeAnimation" id=34]
+[sub_resource type="AnimationNodeAnimation" id=15]
 animation = "idle"
 
-[sub_resource type="AnimationNodeAnimation" id=14]
+[sub_resource type="AnimationNodeAnimation" id=16]
 animation = "izq"
 
-[sub_resource type="AnimationNodeAnimation" id=28]
+[sub_resource type="AnimationNodeAnimation" id=17]
 animation = "izq_idle"
 
-[sub_resource type="AnimationNodeAnimation" id=15]
+[sub_resource type="AnimationNodeAnimation" id=18]
 animation = "stop_face"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=19]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=20]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=21]
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=22]
 
@@ -171,6 +177,12 @@ animation = "stop_face"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=25]
 
+[sub_resource type="AnimationNodeStateMachineTransition" id=26]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=27]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=28]
+
 [sub_resource type="AnimationNodeStateMachineTransition" id=29]
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=30]
@@ -179,44 +191,32 @@ animation = "stop_face"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=32]
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=35]
+[sub_resource type="AnimationNodeStateMachineTransition" id=33]
 
-[sub_resource type="AnimationNodeStateMachineTransition" id=36]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=37]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=38]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=39]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=40]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id=41]
-
-[sub_resource type="AnimationNodeStateMachine" id=26]
+[sub_resource type="AnimationNodeStateMachine" id=34]
 states/abajo/node = SubResource( 10 )
 states/abajo/position = Vector2( 415, 292.962 )
 states/arriba/node = SubResource( 11 )
 states/arriba/position = Vector2( 415, -104 )
-states/arriba_idle/node = SubResource( 33 )
+states/arriba_idle/node = SubResource( 12 )
 states/arriba_idle/position = Vector2( 415, -13.5291 )
-states/der/node = SubResource( 12 )
+states/der/node = SubResource( 13 )
 states/der/position = Vector2( 792, 94 )
-states/der_idle/node = SubResource( 13 )
+states/der_idle/node = SubResource( 14 )
 states/der_idle/position = Vector2( 615, 94 )
-states/idle/node = SubResource( 34 )
+states/idle/node = SubResource( 15 )
 states/idle/position = Vector2( 415, 193.844 )
-states/izq/node = SubResource( 14 )
+states/izq/node = SubResource( 16 )
 states/izq/position = Vector2( 47, 94 )
-states/izq_idle/node = SubResource( 28 )
+states/izq_idle/node = SubResource( 17 )
 states/izq_idle/position = Vector2( 221, 94 )
-states/stop_face/node = SubResource( 15 )
+states/stop_face/node = SubResource( 18 )
 states/stop_face/position = Vector2( 415, 94 )
-transitions = [ "stop_face", "der_idle", SubResource( 22 ), "der_idle", "der", SubResource( 23 ), "der", "der_idle", SubResource( 24 ), "der_idle", "stop_face", SubResource( 25 ), "stop_face", "izq_idle", SubResource( 29 ), "izq_idle", "izq", SubResource( 30 ), "izq", "izq_idle", SubResource( 31 ), "izq_idle", "stop_face", SubResource( 32 ), "stop_face", "idle", SubResource( 35 ), "idle", "abajo", SubResource( 36 ), "abajo", "idle", SubResource( 37 ), "idle", "stop_face", SubResource( 38 ), "stop_face", "arriba_idle", SubResource( 39 ), "arriba_idle", "stop_face", SubResource( 40 ), "arriba_idle", "arriba", SubResource( 41 ) ]
+transitions = [ "stop_face", "der_idle", SubResource( 19 ), "der_idle", "der", SubResource( 20 ), "der", "der_idle", SubResource( 21 ), "der_idle", "stop_face", SubResource( 22 ), "stop_face", "izq_idle", SubResource( 23 ), "izq_idle", "izq", SubResource( 24 ), "izq", "izq_idle", SubResource( 25 ), "izq_idle", "stop_face", SubResource( 26 ), "stop_face", "idle", SubResource( 27 ), "idle", "abajo", SubResource( 28 ), "abajo", "idle", SubResource( 29 ), "idle", "stop_face", SubResource( 30 ), "stop_face", "arriba_idle", SubResource( 31 ), "arriba_idle", "stop_face", SubResource( 32 ), "arriba_idle", "arriba", SubResource( 33 ) ]
 start_node = "stop_face"
 graph_offset = Vector2( -75.0958, 6.15015 )
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id=27]
+[sub_resource type="AnimationNodeStateMachinePlayback" id=35]
 
 [node name="Player 1" type="KinematicBody2D"]
 position = Vector2( 203.563, 64.7397 )
@@ -248,7 +248,7 @@ anims/izq = SubResource( 8 )
 anims/izq_idle = SubResource( 9 )
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-tree_root = SubResource( 26 )
+tree_root = SubResource( 34 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
-parameters/playback = SubResource( 27 )
+parameters/playback = SubResource( 35 )
