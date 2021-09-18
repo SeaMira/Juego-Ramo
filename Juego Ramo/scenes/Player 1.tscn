@@ -257,8 +257,10 @@ anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 35 )
 
+
 [node name="BulletSpawn" type="Position2D" parent="."]
 position = Vector2( 120.803, 21.3574 )
 __meta__ = {
 "_edit_group_": true
 }
+
