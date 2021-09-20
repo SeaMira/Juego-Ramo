@@ -1,7 +1,7 @@
 [gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://characters/monobacansi (1).png" type="Texture" id=1]
-[ext_resource path="res://Node2D.gd" type="Script" id=2]
+[ext_resource path="res://scripts/Player 1.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 27.6076, 44.3055 )
@@ -218,16 +218,23 @@ graph_offset = Vector2( -75.0958, 6.15015 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=35]
 
-[node name="Player 1" type="KinematicBody2D"]
+[node name="Player 1" type="KinematicBody2D" groups=[
+"player",
+]]
+position = Vector2( 56.7314, 46.0516 )
+collision_layer = 0
+collision_mask = 3
 script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 7.62939e-05, 12.6811 )
+shape = SubResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
-
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1.33493, 3.33731 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 hframes = 5
@@ -249,3 +256,11 @@ tree_root = SubResource( 34 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 35 )
+
+
+[node name="BulletSpawn" type="Position2D" parent="."]
+position = Vector2( 120.803, 21.3574 )
+__meta__ = {
+"_edit_group_": true
+}
+

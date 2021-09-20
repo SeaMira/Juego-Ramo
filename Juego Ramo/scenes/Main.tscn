@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scenes/mapa1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Player 1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://scenes/PortalGun.tscn" type="PackedScene" id=4]
+
+[sub_resource type="PhysicsMaterial" id=1]
+bounce = 1.0
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 14.2099
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 257.079, 17.1549 )
+
+[node name="Main" type="Node2D"]
+
+[node name="Node2D" parent="." instance=ExtResource( 1 )]
+show_collision = false
+
+[node name="Player 1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 237.033, 293.599 )
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2( 451.368, 343.928 )
+physics_material_override = SubResource( 1 )
+gravity_scale = 4.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="RigidBody2D"]
+position = Vector2( -0.969727, -1.3871 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2( -0.610962, -0.91655 )
+scale = Vector2( 2, 2 )
+shape = SubResource( 2 )
+one_way_collision_margin = 0.0
+
+[node name="Area2D" type="StaticBody2D" parent="." groups=[
+"wall",
+]]
+position = Vector2( 663.3, 193.794 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Area2D"]
+position = Vector2( -0.94751, 2.05148 )
+scale = Vector2( 8.05922, 0.614154 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -1.07019, 1.78394 )
+shape = SubResource( 3 )
+
+[node name="PortalBullet" parent="." instance=ExtResource( 4 )]
