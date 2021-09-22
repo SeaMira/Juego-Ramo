@@ -15,12 +15,15 @@ radius = 14.2099
 extents = Vector2( 257.079, 17.1549 )
 
 [node name="Main" type="Node2D"]
+position = Vector2( 2.5199, 2.51984 )
 
 [node name="Node2D" parent="." instance=ExtResource( 1 )]
-show_collision = false
 
 [node name="Player 1" parent="." instance=ExtResource( 2 )]
-position = Vector2( 237.033, 293.599 )
+position = Vector2( 822.373, 559.493 )
+
+[node name="Camera2D" type="Camera2D" parent="Player 1"]
+current = true
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 position = Vector2( 451.368, 343.928 )
