@@ -6,7 +6,7 @@ onready var playback = $AnimationTree.get("parameters/playback")
 
 
 var PortalGun = preload("res://scenes/PortalGun.tscn")
-var portal_type = Portal.Type.PORTAL_B
+var portal_type = Portal.Type.PORTAL_A
 
 var can_move = true
 
@@ -54,7 +54,7 @@ func _physics_process(_delta):
 	if playback.get_current_node() == "der" or playback.get_current_node() == "izq" or playback.get_current_node() == "der_idle" or playback.get_current_node() == "izq_idle":
 		$BulletSpawn.set_position(Vector2(0, 20.526))
 		
-	if Input.is_action_just_pressed("weapon"):
+	if Input.is_action_just_pressed("punch"):
 		weapon()
 		
 #	if Input.is_action_just_pressed("punch"):
@@ -83,5 +83,3 @@ func weapon():
 		else:
 			b.rotation = PI
 		
-
-
