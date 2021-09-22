@@ -19,3 +19,5 @@ texture = ExtResource( 1 )
 visible = false
 rotation = 1.5708
 shape = SubResource( 1 )
+
+[connection signal="body_entered" from="." to="." method="_on_Portal_body_entered"]

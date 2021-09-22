@@ -8,16 +8,18 @@ onready var playback = $AnimationTree.get("parameters/playback")
 var PortalGun = preload("res://scenes/PortalGun.tscn")
 var portal_type = Portal.Type.PORTAL_A
 
+var can_move = true
 
 var facing_right = true
 
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var velocity = Vector2()  # The player's movement vector.
 	velocity.x += Input.get_action_strength("mov_der") - Input.get_action_strength("mov_izq")
 	velocity.y += Input.get_action_strength("mov_abajo") - Input.get_action_strength("mov_arriba")
-	
+	if not can_move:
+		velocity = Vector2.ZERO
 	if velocity.length() > 0:
 		velocity = velocity.normalized()*speed
 	velocity = move_and_slide(velocity)
@@ -38,12 +40,19 @@ func _physics_process(delta):
 			
 	if velocity.y > 0 :
 	   playback.travel("abajo")
+	   $BulletSpawn.set_position(Vector2(-26.197, 23.357))
 	elif velocity.y < 0: 	  
 	   playback.travel("arriba")
+	   $BulletSpawn.set_position(Vector2(29.803, 3.357))
 	elif velocity.y == 0 and Input.is_action_just_released("mov_abajo") or colision and Input.is_action_pressed("mov_abajo") or Input.is_action_pressed("mov_abajo") and Input.is_action_pressed("mov_arriba") and playback.get_current_node()== "abajo" :
 		playback.travel("idle")
+		$BulletSpawn.set_position(Vector2(-26.197, 23.357))
 	elif velocity.y == 0 and Input.is_action_just_released("mov_arriba") or colision and Input.is_action_pressed("mov_arriba") or Input.is_action_pressed("mov_abajo") and Input.is_action_pressed("mov_arriba") and playback.get_current_node()== "arriba":
 		playback.travel("arriba_idle") 
+		$BulletSpawn.set_position(Vector2(29.803, 3.357))
+	
+	if playback.get_current_node() == "der" or playback.get_current_node() == "izq" or playback.get_current_node() == "der_idle" or playback.get_current_node() == "izq_idle":
+		$BulletSpawn.set_position(Vector2(0, 20.526))
 		
 	if Input.is_action_just_pressed("weapon"):
 		weapon()
@@ -62,16 +71,17 @@ func weapon():
 	if facing_right: 
 		if Input.is_action_pressed("mov_abajo") or playback.get_current_node() == "idle" :
 			b.rotation = PI/2
+			
 		elif Input.is_action_pressed("mov_arriba") or playback.get_current_node() == "arriba_idle":
 			b.rotation = -PI/2
-		
+			
 	else: 		
 		if Input.is_action_pressed("mov_abajo") or playback.get_current_node() == "idle" :
 			b.rotation = PI/2
 		elif Input.is_action_pressed("mov_arriba") or playback.get_current_node() == "arriba_idle":
-			b.rotation = -PI/2	
+			b.rotation = -PI/2
 		else:
-			b.rotation = PI		
+			b.rotation = PI
 		
 
 
