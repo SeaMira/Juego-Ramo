@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/mapa1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Player 1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://icon.png" type="Texture" id=3]
 [ext_resource path="res://scenes/PortalGun.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Player 2.tscn" type="PackedScene" id=5]
 
 [sub_resource type="PhysicsMaterial" id=1]
 bounce = 1.0
@@ -20,7 +21,7 @@ extents = Vector2( 257.079, 17.1549 )
 show_collision = false
 
 [node name="Player 1" parent="." instance=ExtResource( 2 )]
-position = Vector2( 237.033, 293.599 )
+position = Vector2( 637.033, 492.599 )
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 position = Vector2( 451.368, 343.928 )
@@ -58,3 +59,7 @@ position = Vector2( -1.07019, 1.78394 )
 shape = SubResource( 3 )
 
 [node name="PortalBullet" parent="." instance=ExtResource( 4 )]
+
+[node name="Player 2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 782, 460 )
+scale = Vector2( 0.5, 0.5 )
