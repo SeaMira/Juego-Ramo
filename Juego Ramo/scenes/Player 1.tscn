@@ -4,7 +4,7 @@
 [ext_resource path="res://scripts/Player 1.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 27.6076, 39.3333 )
+extents = Vector2( 27.6076, 35.1049 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "abajo"
@@ -214,7 +214,7 @@ states/stop_face/node = SubResource( 18 )
 states/stop_face/position = Vector2( 415, 94 )
 transitions = [ "stop_face", "der_idle", SubResource( 19 ), "der_idle", "der", SubResource( 20 ), "der", "der_idle", SubResource( 21 ), "der_idle", "stop_face", SubResource( 22 ), "stop_face", "izq_idle", SubResource( 23 ), "izq_idle", "izq", SubResource( 24 ), "izq", "izq_idle", SubResource( 25 ), "izq_idle", "stop_face", SubResource( 26 ), "stop_face", "idle", SubResource( 27 ), "idle", "abajo", SubResource( 28 ), "abajo", "idle", SubResource( 29 ), "idle", "stop_face", SubResource( 30 ), "stop_face", "arriba_idle", SubResource( 31 ), "arriba_idle", "stop_face", SubResource( 32 ), "arriba_idle", "arriba", SubResource( 33 ) ]
 start_node = "stop_face"
-graph_offset = Vector2( -188.97, -10.68 )
+graph_offset = Vector2( -75.0958, 6.15015 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=35]
 

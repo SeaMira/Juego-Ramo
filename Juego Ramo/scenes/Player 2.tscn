@@ -4,7 +4,7 @@
 [ext_resource path="res://scripts/Player 2.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 58.9966, 153.516 )
+extents = Vector2( 24.8045, 48.907 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "abajo"
@@ -236,10 +236,10 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -1.99658, 45.9459 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 1 )
 hframes = 6
 vframes = 7
