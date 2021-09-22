@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/mapa1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Player 1.tscn" type="PackedScene" id=2]
@@ -6,26 +6,35 @@
 [ext_resource path="res://scenes/PortalGun.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/Player 2.tscn" type="PackedScene" id=5]
 
-[sub_resource type="PhysicsMaterial" id=1]
+[sub_resource type="PhysicsMaterial" id=4]
 bounce = 1.0
 
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="CircleShape2D" id=5]
 radius = 14.2099
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 257.079, 17.1549 )
 
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 21.3306, 39.3625 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 27.1218, 83.0804 )
+
 [node name="Main" type="Node2D"]
+position = Vector2( 2.5199, 2.51984 )
 
 [node name="Node2D" parent="." instance=ExtResource( 1 )]
-show_collision = false
 
 [node name="Player 1" parent="." instance=ExtResource( 2 )]
-position = Vector2( 637.033, 492.599 )
+position = Vector2( 822.373, 559.493 )
+
+[node name="Camera2D" type="Camera2D" parent="Player 1"]
+current = true
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 position = Vector2( 451.368, 343.928 )
-physics_material_override = SubResource( 1 )
+physics_material_override = SubResource( 4 )
 gravity_scale = 4.0
 __meta__ = {
 "_edit_group_": true
@@ -38,7 +47,7 @@ texture = ExtResource( 3 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 position = Vector2( -0.610962, -0.91655 )
 scale = Vector2( 2, 2 )
-shape = SubResource( 2 )
+shape = SubResource( 5 )
 one_way_collision_margin = 0.0
 
 [node name="Area2D" type="StaticBody2D" parent="." groups=[
@@ -63,3 +72,15 @@ shape = SubResource( 3 )
 [node name="Player 2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 782, 460 )
 scale = Vector2( 0.5, 0.5 )
+
+[node name="Poste" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Poste"]
+position = Vector2( 2515.5, -47.5973 )
+shape = SubResource( 6 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( 2278.66, -230.772 )
+shape = SubResource( 7 )
