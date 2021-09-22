@@ -221,6 +221,7 @@ graph_offset = Vector2( -75.0958, 6.15015 )
 [node name="Player 1" type="KinematicBody2D" groups=[
 "player",
 ]]
+scale = Vector2( 0.5, 0.5 )
 collision_layer = 0
 collision_mask = 3
 script = ExtResource( 2 )
@@ -237,7 +238,7 @@ scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 hframes = 5
 vframes = 5
-frame = 4
+frame = 6
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/abajo = SubResource( 2 )
@@ -256,7 +257,7 @@ active = true
 parameters/playback = SubResource( 35 )
 
 [node name="BulletSpawn" type="Position2D" parent="."]
-position = Vector2( 120.803, 21.3574 )
+position = Vector2( 0, 20.526 )
 __meta__ = {
 "_edit_group_": true
 }
