@@ -4,7 +4,7 @@
 [ext_resource path="res://scripts/Player 2.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 13.0514, 30.8566 )
+extents = Vector2( 14.3877, 29.5199 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "abajo"
@@ -229,13 +229,11 @@ graph_offset = Vector2( -1374, -222.256 )
 "player",
 ]]
 collision_layer = 0
-collision_mask = 3
+collision_mask = 35
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 3.5636, 9.35445 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
