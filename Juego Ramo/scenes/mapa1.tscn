@@ -1792,6 +1792,10 @@ extents = Vector2( 14.5461, 36.128 )
 radius = 24.6243
 height = 0.0
 
+[sub_resource type="CapsuleShape2D" id=62]
+radius = 24.6243
+height = 0.0
+
 [node name="Mapa1" type="Node2D"]
 position = Vector2( 0.00330353, 0.10342 )
 scale = Vector2( 2, 2 )
