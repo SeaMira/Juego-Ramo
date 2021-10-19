@@ -1,0 +1,267 @@
+[gd_scene load_steps=40 format=2]
+
+[ext_resource path="res://characters/mavi.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Player2.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 14.3877, 29.5199 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "abajo"
+length = 0.21
+loop = true
+step = 0.04
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.04, 0.08, 0.12, 0.16 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 6, 7, 8, 9 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "arriba"
+length = 0.21
+loop = true
+step = 0.04
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.04, 0.08, 0.12, 0.16 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "arriba_idle"
+length = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.42
+loop = true
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.03, 0.06, 0.09, 0.12, 0.15, 0.18, 0.21, 0.24, 0.27, 0.3, 0.33, 0.36, 0.39 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "der_idle"
+length = 0.01
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 24 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "idle"
+length = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 5 ]
+}
+
+[sub_resource type="Animation" id=8]
+length = 0.42
+loop = true
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.03, 0.06, 0.09, 0.12, 0.15, 0.18, 0.21, 0.24, 0.27, 0.3, 0.33, 0.36, 0.39 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "izq_idle"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 10 ]
+}
+
+[sub_resource type="AnimationNodeAnimation" id=10]
+animation = "abajo"
+
+[sub_resource type="AnimationNodeAnimation" id=11]
+animation = "arriba"
+
+[sub_resource type="AnimationNodeAnimation" id=12]
+animation = "arriba_idle"
+
+[sub_resource type="AnimationNodeAnimation" id=13]
+animation = "der"
+
+[sub_resource type="AnimationNodeAnimation" id=14]
+animation = "der_idle"
+
+[sub_resource type="AnimationNodeAnimation" id=15]
+animation = "idle"
+
+[sub_resource type="AnimationNodeAnimation" id=16]
+animation = "izq"
+
+[sub_resource type="AnimationNodeAnimation" id=17]
+animation = "izq_idle"
+
+[sub_resource type="AnimationNodeStateMachine" id=18]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=19]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=20]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=21]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=22]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=23]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=24]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=25]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=26]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=27]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=28]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=29]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=30]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=31]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=32]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=33]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=34]
+
+[sub_resource type="AnimationNodeStateMachine" id=35]
+states/abajo/node = SubResource( 10 )
+states/abajo/position = Vector2( -779, 179 )
+states/arriba/node = SubResource( 11 )
+states/arriba/position = Vector2( -779, -196.72 )
+states/arriba_idle/node = SubResource( 12 )
+states/arriba_idle/position = Vector2( -779, -115.72 )
+states/der/node = SubResource( 13 )
+states/der/position = Vector2( -391, -20.72 )
+states/der_idle/node = SubResource( 14 )
+states/der_idle/position = Vector2( -577, -20.72 )
+states/idle/node = SubResource( 15 )
+states/idle/position = Vector2( -779, 72 )
+states/izq/node = SubResource( 16 )
+states/izq/position = Vector2( -1167, -20.72 )
+states/izq_idle/node = SubResource( 17 )
+states/izq_idle/position = Vector2( -974, -20.72 )
+states/stop_face/node = SubResource( 18 )
+states/stop_face/position = Vector2( -779, -20.72 )
+transitions = [ "arriba_idle", "arriba", SubResource( 19 ), "arriba", "arriba_idle", SubResource( 20 ), "der_idle", "der", SubResource( 21 ), "der", "der_idle", SubResource( 22 ), "stop_face", "izq_idle", SubResource( 23 ), "izq_idle", "izq", SubResource( 24 ), "izq", "izq_idle", SubResource( 25 ), "izq_idle", "stop_face", SubResource( 26 ), "stop_face", "arriba_idle", SubResource( 27 ), "arriba_idle", "stop_face", SubResource( 28 ), "idle", "abajo", SubResource( 29 ), "abajo", "idle", SubResource( 30 ), "idle", "stop_face", SubResource( 31 ), "stop_face", "idle", SubResource( 32 ), "stop_face", "der_idle", SubResource( 33 ), "der_idle", "stop_face", SubResource( 34 ) ]
+start_node = "stop_face"
+graph_offset = Vector2( -1374, -222.256 )
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=36]
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=37]
+
+[node name="Player 2" type="KinematicBody2D" groups=[
+"player",
+"player2",
+]]
+collision_layer = 0
+collision_mask = 35
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 3.5636, 9.35445 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 1 )
+hframes = 6
+vframes = 7
+frame = 24
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/abajo = SubResource( 2 )
+anims/arriba = SubResource( 3 )
+anims/arriba_idle = SubResource( 4 )
+anims/der = SubResource( 5 )
+anims/der_idle = SubResource( 6 )
+anims/idle = SubResource( 7 )
+anims/izq = SubResource( 8 )
+anims/izq_idle = SubResource( 9 )
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 35 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource( 36 )
+parameters/stop_face/playback = SubResource( 37 )
+
+[node name="BulletSpawn" type="Position2D" parent="."]
+__meta__ = {
+"_edit_group_": true
+}
