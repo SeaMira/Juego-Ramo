@@ -1,0 +1,86 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/Menu.gd" type="Script" id=1]
+[ext_resource path="res://assets/ECbeOgrXoAI1Bno.png" type="Texture" id=2]
+[ext_resource path="res://assets/OUTRUN-2.png" type="Texture" id=3]
+[ext_resource path="res://fonts/buttons.tres" type="DynamicFont" id=4]
+[ext_resource path="res://assets/buttonstyle.tres" type="StyleBox" id=5]
+
+[sub_resource type="Theme" id=1]
+default_font = ExtResource( 4 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.739624
+margin_right = 0.739624
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -500.0
+margin_top = -250.0
+margin_right = -250.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Start" type="Button" parent="VBoxContainer"]
+margin_right = 250.0
+margin_bottom = 38.0
+focus_neighbour_left = NodePath("../quit")
+focus_neighbour_top = NodePath("../quit")
+focus_neighbour_right = NodePath("../quit")
+focus_neighbour_bottom = NodePath("../quit")
+custom_styles/hover = ExtResource( 5 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/disabled = ExtResource( 5 )
+custom_styles/normal = ExtResource( 5 )
+custom_fonts/font = ExtResource( 4 )
+text = "Jugar"
+
+[node name="quit" type="Button" parent="VBoxContainer"]
+margin_top = 42.0
+margin_right = 250.0
+margin_bottom = 80.0
+focus_neighbour_left = NodePath("../Start")
+focus_neighbour_top = NodePath("../Start")
+focus_neighbour_right = NodePath("../Start")
+focus_neighbour_bottom = NodePath("../Start")
+theme = SubResource( 1 )
+custom_styles/hover = ExtResource( 5 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/disabled = ExtResource( 5 )
+custom_styles/normal = ExtResource( 5 )
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+text = "Salir"
+
+[node name="OUTRUN-2" type="Sprite" parent="."]
+position = Vector2( 650, 275 )
+scale = Vector2( 1.40977, 1.3925 )
+texture = ExtResource( 3 )
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]
