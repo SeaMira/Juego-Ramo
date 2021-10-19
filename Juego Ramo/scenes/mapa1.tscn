@@ -1869,25 +1869,25 @@ radius = 5.58496
 height = 60.7336
 
 [sub_resource type="CapsuleShape2D" id=56]
-radius = 6.72607
-height = 65.1777
-
-[sub_resource type="CapsuleShape2D" id=57]
 radius = 7.03748
 height = 39.3547
 
-[sub_resource type="CapsuleShape2D" id=58]
+[sub_resource type="CapsuleShape2D" id=57]
 radius = 9.4646
 height = 32.1071
 
-[sub_resource type="RectangleShape2D" id=59]
+[sub_resource type="RectangleShape2D" id=58]
 extents = Vector2( 135.266, 32.5079 )
 
-[sub_resource type="RectangleShape2D" id=60]
+[sub_resource type="RectangleShape2D" id=59]
 extents = Vector2( 140.578, 30.3433 )
 
-[sub_resource type="RectangleShape2D" id=61]
+[sub_resource type="RectangleShape2D" id=60]
 extents = Vector2( 14.5461, 36.128 )
+
+[sub_resource type="CapsuleShape2D" id=61]
+radius = 24.6243
+height = 0.0
 
 [sub_resource type="CapsuleShape2D" id=62]
 radius = 24.6243
