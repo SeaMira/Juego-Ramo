@@ -5,38 +5,34 @@
 [ext_resource path="res://scenes/mapa1-TileMap.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/mapa1-TileMap2.tscn" type="PackedScene" id=4]
 
-[sub_resource type="CapsuleShape2D" id=54]
+[sub_resource type="CapsuleShape2D" id=1]
 radius = 5.58496
 height = 60.7336
 
-[sub_resource type="CapsuleShape2D" id=55]
+[sub_resource type="CapsuleShape2D" id=2]
 radius = 6.72607
 height = 65.1777
 
-[sub_resource type="CapsuleShape2D" id=56]
+[sub_resource type="CapsuleShape2D" id=3]
 radius = 7.03748
 height = 39.3547
 
-[sub_resource type="CapsuleShape2D" id=57]
+[sub_resource type="CapsuleShape2D" id=4]
 radius = 9.4646
 height = 32.1071
 
-[sub_resource type="RectangleShape2D" id=58]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 135.266, 32.5079 )
 
-[sub_resource type="RectangleShape2D" id=59]
+[sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 140.578, 30.3433 )
 
-[sub_resource type="RectangleShape2D" id=60]
+[sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 14.5461, 36.128 )
 
-[sub_resource type="CapsuleShape2D" id=61]
+[sub_resource type="CapsuleShape2D" id=8]
 radius = 24.6243
 height = 0.0
-
-[sub_resource type="CapsuleShape2D" id=62]
-radius = 6.72607
-height = 65.1777
 
 [node name="Mapa1" type="Node2D"]
 position = Vector2( 0.00330353, 0.10342 )
@@ -88,7 +84,7 @@ collision_layer = 65
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Poste"]
 position = Vector2( 3083.87, 200.522 )
-shape = SubResource( 54 )
+shape = SubResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -100,7 +96,7 @@ collision_layer = 65
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Poste3"]
 position = Vector2( 1234.94, 8.73071 )
-shape = SubResource( 55 )
+shape = SubResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -112,7 +108,7 @@ collision_layer = 33
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Poste4"]
 position = Vector2( 1544.47, -99.2126 )
-shape = SubResource( 56 )
+shape = SubResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -124,7 +120,7 @@ collision_layer = 65
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Poste5"]
 position = Vector2( 3394.16, 307.093 )
-shape = SubResource( 57 )
+shape = SubResource( 4 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -136,7 +132,7 @@ collision_layer = 65
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pared"]
 position = Vector2( 2397.17, 230.963 )
-shape = SubResource( 58 )
+shape = SubResource( 5 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." groups=[
 "wall",
@@ -146,7 +142,7 @@ collision_layer = 65
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( -464.426, -111.215 )
-shape = SubResource( 59 )
+shape = SubResource( 6 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." groups=[
 "wall",
@@ -159,7 +155,7 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2( 3000, 0 )
-shape = SubResource( 60 )
+shape = SubResource( 7 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -174,7 +170,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
-shape = SubResource( 61 )
+shape = SubResource( 8 )
 __meta__ = {
 "_edit_group_": true
 }
