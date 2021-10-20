@@ -63,4 +63,4 @@ func _on_next_message_timeout():
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://scenes/mapa1.tscn")
+	get_tree().change_scene("res://scenes/Main.tscn")
