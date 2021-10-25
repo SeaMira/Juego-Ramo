@@ -65,6 +65,7 @@ zoom = Vector2( 1.8, 1.8 )
 script = ExtResource( 4 )
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
+visible = false
 position = Vector2( 451.368, 343.928 )
 physics_material_override = SubResource( 1 )
 gravity_scale = 4.0
