@@ -6,7 +6,7 @@ export var SPEED = 1000
 
 var PortalObj = preload("res://scenes/Portal.tscn")
 
-var portal_type = Portal.Type.PORTAL_A
+var portal_type = Portal2.Type.PORTAL_A
 
 func _physics_process(delta: float) -> void:
 	position += transform.x*delta*SPEED
@@ -28,7 +28,7 @@ func _portal_instance():
 		return
 	var portal = null
 	match portal_type:
-		Portal.Type.PORTAL_A:
+		Portal2.Type.PORTAL_A:
 			if Manager.portal_a: #si portal a existe
 				portal = Manager.portal_a
 			else:
@@ -36,7 +36,7 @@ func _portal_instance():
 				portal.type = portal_type
 				Manager.portal_a = portal
 				get_parent().add_child(portal)
-		Portal.Type.PORTAL_B:
+		Portal2.Type.PORTAL_B:
 			if Manager.portal_b: #si portal a existe
 				portal = Manager.portal_b
 			else:

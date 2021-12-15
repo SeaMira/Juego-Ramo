@@ -83,18 +83,14 @@ scale = Vector2( 2, 2 )
 shape = SubResource( 2 )
 one_way_collision_margin = 0.0
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." groups=[
-"wall",
-]]
+[node name="StaticBody2D" type="StaticBody2D" parent="." groups=["wall"]]
 collision_layer = 65
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 1330.26, -259.775 )
 shape = SubResource( 3 )
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="." groups=[
-"wall",
-]]
+[node name="StaticBody2D2" type="StaticBody2D" parent="." groups=["wall"]]
 collision_layer = 65
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]

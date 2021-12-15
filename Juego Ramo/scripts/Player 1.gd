@@ -6,7 +6,7 @@ onready var playback = $AnimationTree.get("parameters/playback")
 
 
 var PortalGun = preload("res://scenes/PortalGun.tscn")
-var portal_type = Portal.Type.PORTAL_B
+var portal_type = Portal2.Type.PORTAL_B
 
 var can_move = true
 
