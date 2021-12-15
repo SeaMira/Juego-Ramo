@@ -1,7 +1,7 @@
 extends Node
 
-var portal_a: Portal = null
-var portal_b: Portal = null
+var portal_a: Portal2 = null
+var portal_b: Portal2 = null
 
 
 

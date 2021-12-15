@@ -225,9 +225,7 @@ graph_offset = Vector2( -1374, -222.256 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=37]
 
-[node name="Player 2" type="KinematicBody2D" groups=[
-"player",
-]]
+[node name="Player 2" type="KinematicBody2D" groups=["player"]]
 collision_layer = 0
 collision_mask = 35
 script = ExtResource( 2 )

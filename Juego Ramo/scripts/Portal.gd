@@ -1,6 +1,6 @@
 tool
 
-class_name Portal
+class_name Portal2
 
 extends Area2D
 
