@@ -2,12 +2,12 @@
 
 [ext_resource path="res://fonts/videophreak/VIDEOPHREAK.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/unnamed.png" type="Texture" id=2]
-[ext_resource path="res://scripts/introhistoria.gd" type="Script" id=3]
+[ext_resource path="res://scripts/Creditos.gd" type="Script" id=3]
 [ext_resource path="res://assets/buttonstyle.tres" type="StyleBox" id=4]
 [ext_resource path="res://assets/buttonstylefocus.tres" type="StyleBox" id=5]
 [ext_resource path="res://fonts/buttons.tres" type="DynamicFont" id=6]
 
-[sub_resource type="Animation" id=1]
+[sub_resource type="Animation" id=3]
 resource_name = "slide"
 length = 15.0
 tracks/0/type = "value"
@@ -23,7 +23,7 @@ tracks/0/keys = {
 "values": [ Vector2( 1022.88, 378.087 ), Vector2( 275, 378.087 ) ]
 }
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=1]
 size = 34
 font_data = ExtResource( 1 )
 
@@ -36,11 +36,11 @@ border_width_bottom = 5
 border_color = Color( 0.054902, 0.470588, 0.145098, 1 )
 border_blend = true
 
-[node name="introhistoria" type="Node2D"]
+[node name="Creditos" type="Node2D"]
 script = ExtResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/slide = SubResource( 1 )
+anims/slide = SubResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 1022.88, 378.087 )
@@ -48,42 +48,35 @@ scale = Vector2( 1.59756, 1.67673 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 200.0
-margin_top = 450.0
-margin_right = 1077.0
-margin_bottom = 650.0
+margin_left = 145.0
+margin_top = 90.0
+margin_right = 1145.0
+margin_bottom = 590.0
 custom_colors/font_color = Color( 0.054902, 0.470588, 0.145098, 1 )
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 1 )
 custom_styles/normal = SubResource( 2 )
 align = 1
-valign = 1
 autowrap = true
 clip_text = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="next_char" type="Timer" parent="."]
-
-[node name="next_message" type="Timer" parent="."]
-
-[node name="Button" type="Button" parent="."]
-margin_left = 974.386
-margin_top = 628.803
-margin_right = 1156.39
-margin_bottom = 666.803
+[node name="back" type="Button" parent="."]
+margin_left = 550.0
+margin_top = 630.0
+margin_right = 770.0
+margin_bottom = 680.0
 custom_fonts/font = ExtResource( 6 )
 custom_styles/hover = ExtResource( 4 )
 custom_styles/pressed = ExtResource( 4 )
 custom_styles/focus = ExtResource( 5 )
 custom_styles/disabled = ExtResource( 4 )
 custom_styles/normal = ExtResource( 4 )
-text = "Continuar"
+text = "Volver al Menú"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="timeout" from="next_char" to="." method="_on_next_char_timeout"]
-[connection signal="timeout" from="next_message" to="." method="_on_next_message_timeout"]
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
