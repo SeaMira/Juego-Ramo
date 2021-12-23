@@ -9,8 +9,9 @@ var creditos = [
 
 func _ready():
 	$back.grab_focus()
-	show_text()
 	$AnimationPlayer.play("slide")
+	show_text()
+
 
 func _on_back_pressed():
 	get_tree().change_scene("res://scenes/Menu.tscn") # Replace with function body.
