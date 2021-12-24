@@ -1,13 +1,17 @@
 extends Node2D
 
 var messages = [
-	"My First Message", 
-	"Second Message For You",
-	"this is a new era"
+	"Han pasado siglos desde que existió paz en la galaxia.",
+	"Ahora no es más que un lejano recuerdo,", 
+	"el ataque de la raza Kaaway, y sus aliados del Imperio Intergaláctico de los Sor cada vez suma más adherentes.",
+	"Hoy una nave imperial se divisa en el planeta Kuro,",
+	"el último oasis de paz para refugiados de todos los rincones de la galaxia,",
+	"o así era ... hasta hoy..."
+	
 ]
 
-var typing_speed = .1
-var read_time = 2
+var typing_speed = .05
+var read_time = 1.5
 
 var current_message = 0
 var display = ""
@@ -63,4 +67,4 @@ func _on_next_message_timeout():
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://scenes/Main.tscn")
+	get_tree().change_scene("res://scenes/DialogoIntro.tscn")

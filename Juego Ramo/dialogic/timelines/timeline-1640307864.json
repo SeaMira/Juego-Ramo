@@ -1,0 +1,63 @@
+{
+	"events": [
+		{
+			"character": "character-1640307376.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Que esta pasando??"
+		},
+		{
+			"choice": "No estoy seguro",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1640307376.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Suenan como  naves imperiales! Igual que el dia que llegaron a mi planeta natal."
+		},
+		{
+			"choice": "El imperio esta aquí",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1640307376.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh no, el imperio otra vez no, todavia duele lo que hicieron en mi hogar."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1640307363.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Debemos correr, ya he visto lo que son capaces esas basuras."
+		},
+		{
+			"character": "character-1640307376.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Cuidado ahí viene uno, toma!!  con estos portales nos sera más facil."
+		},
+		{
+			"change_scene": "res://scenes/Main.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1640307864.json",
+		"name": "Intro"
+	}
+}

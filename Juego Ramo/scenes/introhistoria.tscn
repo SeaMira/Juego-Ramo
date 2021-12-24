@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://fonts/videophreak/VIDEOPHREAK.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://assets/unnamed.png" type="Texture" id=2]
@@ -6,10 +6,26 @@
 [ext_resource path="res://assets/buttonstyle.tres" type="StyleBox" id=4]
 [ext_resource path="res://assets/buttonstylefocus.tres" type="StyleBox" id=5]
 [ext_resource path="res://fonts/buttons.tres" type="DynamicFont" id=6]
+[ext_resource path="res://assets/BlueRedGreen_Spacecraft_V1.0.png" type="Texture" id=7]
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 700.88, 200.087 ) ]
+}
 
 [sub_resource type="Animation" id=1]
 resource_name = "slide"
-length = 15.0
+length = 30.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:position")
 tracks/0/interp = 1
@@ -17,10 +33,22 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 15 ),
+"times": PoolRealArray( 0, 30 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1022.88, 378.087 ), Vector2( 275, 378.087 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 5, 10, 15, 20, 25, 30 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 125, 200.087 ), Vector2( 688.88, 200.087 ), Vector2( 700.88, 400.087 ), Vector2( 720.88, 175.087 ), Vector2( 680.88, 325.087 ), Vector2( 700.88, 100.087 ), Vector2( 1300.88, 825.087 ) ]
 }
 
 [sub_resource type="DynamicFont" id=3]
@@ -40,6 +68,7 @@ border_blend = true
 script = ExtResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 4 )
 anims/slide = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -83,6 +112,12 @@ text = "Continuar"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 700.88, 200.087 )
+rotation = 1.5708
+scale = Vector2( 4.997, 6 )
+texture = ExtResource( 7 )
 
 [connection signal="timeout" from="next_char" to="." method="_on_next_char_timeout"]
 [connection signal="timeout" from="next_message" to="." method="_on_next_message_timeout"]

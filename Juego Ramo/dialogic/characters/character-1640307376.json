@@ -1,0 +1,20 @@
+{
+	"color": "#ff276c1b",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1640307376.json",
+	"mirror_portraits": false,
+	"name": "Mavi",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://assets/maviPortrait.png"
+		}
+	],
+	"scale": 50
+}
