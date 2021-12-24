@@ -8,6 +8,8 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$AudioStreamPlayer.play(0)
+	$AudioStreamPlayer.stop()
 	$VBoxContainer/Start.grab_focus()
 
 
