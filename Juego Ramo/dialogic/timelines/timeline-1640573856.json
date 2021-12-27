@@ -88,7 +88,7 @@
 			"character": "character-1640307363.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Mavi, paece que queria entregarnos su nave, vamos debe estar cerca."
+			"text": "Mavi, parece que queria entregarnos su nave, vamos debe estar cerca."
 		},
 		{
 			"change_scene": "res://scenes/main2.tscn",
