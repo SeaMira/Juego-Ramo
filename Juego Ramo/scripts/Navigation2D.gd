@@ -25,8 +25,12 @@ func _unhandled_input(event):
 
 func move_along_path(distance):
 	var last_point = character.position
+	var direction = Vector2()
 	while path.size():
 		var distance_between_points = last_point.distance_to(path[0])
+		direction.x = path[0].x - last_point.x
+		direction.y = path[0].y - last_point.y
+		character.vect_dir = direction
 		# The position to move to falls between two points.
 		if distance <= distance_between_points:
 			character.position = last_point.linear_interpolate(path[0], distance / distance_between_points)

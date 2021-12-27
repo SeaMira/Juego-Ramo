@@ -111,7 +111,7 @@ margin_left = 147.0
 margin_top = 91.0
 margin_right = 1144.0
 margin_bottom = 597.0
-color = Color( 0.0901961, 0.129412, 0.203922, 1 )
+color = Color( 0.0941176, 0.133333, 0.207843, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -159,9 +159,9 @@ Tilesets:
 \"Neo Zero Cyberpunk City Tileset\" by yanin
  (https://yunusyanin.itch.io/neo-zero-cyberpunk-city-tileset)
 
-\"Cosmic Lilac! Sci-Fi Tileset by PetricakeGames\"
+\"MicroRoguelike - SCI-FI 1 by Tazmoe\"
 
-(https://petricakegames.itch.io/cosmic-lilac)"
+(https://tazmoe.itch.io/mcr-sci-fi-1)"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false

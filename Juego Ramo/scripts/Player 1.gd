@@ -1,18 +1,12 @@
 extends KinematicBody2D
 
 export var speed = 400  # How fast the player will move (pixels/sec).
-
 onready var playback = $AnimationTree.get("parameters/playback")
-
 
 var PortalGun = preload("res://scenes/PortalGun.tscn")
 var portal_type = Portal2.Type.PORTAL_B
-
 var can_move = true
-
 var facing_right = true
-
-
 
 func _physics_process(_delta):
 	var velocity = Vector2()  # The player's movement vector.
@@ -36,8 +30,8 @@ func _physics_process(_delta):
 	elif velocity.x == 0 and Input.is_action_just_released("mov_der") or colision and Input.is_action_pressed("mov_der") or Input.is_action_pressed("mov_der") and Input.is_action_pressed("mov_izq") and playback.get_current_node() == "der" :
 	   playback.travel("der_idle")
 	elif velocity.x == 0 and Input.is_action_just_released("mov_izq") or colision and Input.is_action_pressed("mov_izq") or Input.is_action_pressed("mov_der") and Input.is_action_pressed("mov_izq") and playback.get_current_node() == "izq" :
-	   playback.travel("izq_idle")		
-			
+	   playback.travel("izq_idle")
+
 	if velocity.y > 0 :
 	   playback.travel("abajo")
 	   $BulletSpawn.set_position(Vector2(-26.197, 23.357))

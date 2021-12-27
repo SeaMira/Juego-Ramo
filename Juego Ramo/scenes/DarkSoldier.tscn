@@ -221,7 +221,8 @@ states/Right/position = Vector2( 633.151, 54.3147 )
 states/Up/node = SubResource( 18 )
 states/Up/position = Vector2( 251.758, -126.778 )
 transitions = [ "Idle right", "Right", SubResource( 19 ), "Right", "Idle right", SubResource( 20 ), "Down", "Idle down", SubResource( 21 ), "Idle down", "Down", SubResource( 22 ), "Left", "Idle left", SubResource( 23 ), "Idle left", "Left", SubResource( 24 ), "Up", "Idle up", SubResource( 25 ), "Idle up", "Up", SubResource( 26 ), "Idle left", "Idle down 2", SubResource( 27 ), "Idle down 2", "Idle left", SubResource( 28 ), "Idle down", "Idle down 2", SubResource( 29 ), "Idle down 2", "Idle down", SubResource( 30 ), "Idle down 2", "Idle right", SubResource( 31 ), "Idle right", "Idle down 2", SubResource( 32 ), "Idle up", "Idle down 2", SubResource( 33 ), "Idle down 2", "Idle up", SubResource( 34 ) ]
-graph_offset = Vector2( -216.516, -111.87 )
+start_node = "Idle down 2"
+graph_offset = Vector2( -434.49, -72.9943 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=36]
 
@@ -241,6 +242,7 @@ scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 hframes = 3
 vframes = 4
+frame = 7
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/Down = SubResource( 2 )
@@ -255,6 +257,7 @@ anims/Up = SubResource( 9 )
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 35 )
 anim_player = NodePath("../AnimationPlayer")
+active = true
 parameters/playback = SubResource( 36 )
 
 [node name="Area2D" type="Area2D" parent="."]
