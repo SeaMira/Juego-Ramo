@@ -1,0 +1,115 @@
+{
+	"events": [
+		{
+			"character": "character-1640307376.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mira Grun, al fin!. La nave que menciono el soldado."
+		},
+		{
+			"character": "character-1640307376.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Podremos salir de aqui!!! "
+		},
+		{
+			"character": "character-1640307363.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mierda"
+		},
+		{
+			"character": "character-1640307376.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Y podremos salvarnos, buscarnos una nueva vida, un nuevo comienzo, lejos de todo esto."
+		},
+		{
+			"character": "character-1640307363.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mierda mierda mierda...."
+		},
+		{
+			"character": "character-1640307376.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¿Que pasa Grun, no te gusta mi idea?"
+		},
+		{
+			"character": "character-1640307363.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No... no es eso, es solo que esta... esta nave..."
+		},
+		{
+			"character": "character-1640307376.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¿Que le pasa a la nave?"
+		},
+		{
+			"character": "character-1640307363.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Es unipersonal, solo uno de nosotros saldra de aqui, dejando el otro a su suerte."
+		},
+		{
+			"character": "character-1640307376.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mierda! Tan cerca, de nuestros sueños, de olvidarnos de esta guerra."
+		},
+		{
+			"character": "character-1640307376.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ve tu Grun, debes sobrevivir pase lo que pase, vivir por los dos."
+		},
+		{
+			"character": "character-1640307363.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ni lo creas, tu eres el que se subira a esa nave. Son tus sueños al fin y al cabo."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "¿Quien deberia subir a la nave y salvarse?"
+		},
+		{
+			"choice": "Mavi",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"change_scene": "res://scenes/finalMavi.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"choice": "Grun",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"change_scene": "res://scenes/finalGrun.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1640569727.json",
+		"name": "final"
+	}
+}

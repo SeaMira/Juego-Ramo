@@ -1,20 +1,20 @@
 {
-	"color": "#ff0f299b",
+	"color": "#ffc654d0",
 	"description": "",
 	"display_name": "",
 	"display_name_bool": false,
-	"id": "character-1640307363.json",
+	"id": "character-1640573876.json",
 	"mirror_portraits": false,
-	"name": "Grun",
-	"nickname": "GRUN",
-	"nickname_bool": true,
+	"name": "Soldado",
+	"nickname": "",
+	"nickname_bool": false,
 	"offset_x": 0,
 	"offset_y": 0,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://assets/monoPortrait.png"
+			"path": ""
 		}
 	],
-	"scale": 1495
+	"scale": 100
 }

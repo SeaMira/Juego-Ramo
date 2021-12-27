@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/fondo-verde.png" type="Texture" id=1]
+[ext_resource path="res://assets/ShooterFull/Ships/1/Pattern3/Yellow/Right/6.png" type="Texture" id=2]
+[ext_resource path="res://scenes/finalGrun.gd" type="Script" id=3]
+[ext_resource path="res://assets/buttonstyle.tres" type="StyleBox" id=4]
+[ext_resource path="res://assets/buttonstylefocus.tres" type="StyleBox" id=5]
+[ext_resource path="res://fonts/buttons.tres" type="DynamicFont" id=6]
+[ext_resource path="res://despegue.tres" type="Animation" id=7]
+
+[sub_resource type="Animation" id=1]
+resource_name = "slide"
+length = 30.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 30 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1022.88, 378.087 ), Vector2( 275, 378.087 ) ]
+}
+
+[node name="introhistoria" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "despegue"
+anims/RESET = ExtResource( 7 )
+anims/despegue = ExtResource( 7 )
+anims/slide = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1590.31, -943.639 )
+scale = Vector2( 1.59756, 1.67673 )
+texture = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 974.386
+margin_top = 628.803
+margin_right = 1156.39
+margin_bottom = 666.803
+custom_fonts/font = ExtResource( 6 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/disabled = ExtResource( 4 )
+custom_styles/normal = ExtResource( 4 )
+text = "Fin"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 550, 500.4 )
+rotation = -0.790634
+scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

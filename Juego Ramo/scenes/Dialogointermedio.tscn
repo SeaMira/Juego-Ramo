@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/Modern Fantasy JRPG Character Sprites (transparent).png" type="Texture" id=1]
+[ext_resource path="res://addons/dialogic/Dialog.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/paso_nivel2.png" type="Texture" id=3]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Conversacion1" type="Sprite" parent="."]
+position = Vector2( 600.805, 500 )
+texture = ExtResource( 3 )
+
+[node name="Dialog" parent="." instance=ExtResource( 2 )]
+margin_left = 445.87
+margin_top = 434.214
+margin_right = 445.87
+margin_bottom = 434.214
+timeline = "timeline-1640573856.json"
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 700.439, -209.664 )
+rotation = -0.509636
+scale = Vector2( 4, 4 )
+texture = ExtResource( 1 )
