@@ -214,13 +214,11 @@ states/stop_face/node = SubResource( 18 )
 states/stop_face/position = Vector2( 415, 94 )
 transitions = [ "stop_face", "der_idle", SubResource( 19 ), "der_idle", "der", SubResource( 20 ), "der", "der_idle", SubResource( 21 ), "der_idle", "stop_face", SubResource( 22 ), "stop_face", "izq_idle", SubResource( 23 ), "izq_idle", "izq", SubResource( 24 ), "izq", "izq_idle", SubResource( 25 ), "izq_idle", "stop_face", SubResource( 26 ), "stop_face", "idle", SubResource( 27 ), "idle", "abajo", SubResource( 28 ), "abajo", "idle", SubResource( 29 ), "idle", "stop_face", SubResource( 30 ), "stop_face", "arriba_idle", SubResource( 31 ), "arriba_idle", "stop_face", SubResource( 32 ), "arriba_idle", "arriba", SubResource( 33 ) ]
 start_node = "stop_face"
-graph_offset = Vector2( -75.0958, 6.15015 )
+graph_offset = Vector2( -132.499, -48.709 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=35]
 
-[node name="Player 1" type="KinematicBody2D" groups=[
-"player",
-]]
+[node name="Player 1" type="KinematicBody2D" groups=["player"]]
 collision_layer = 0
 collision_mask = 35
 script = ExtResource( 2 )
@@ -238,7 +236,7 @@ scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 hframes = 5
 vframes = 5
-frame = 7
+frame = 3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/abajo = SubResource( 2 )

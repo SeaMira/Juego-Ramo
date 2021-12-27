@@ -1,15 +1,11 @@
 extends KinematicBody2D
 
 export var speed = 400  # How fast the player will move (pixels/sec).
-
 onready var playback = $AnimationTree.get("parameters/playback")
-
 
 var PortalGun = preload("res://scenes/PortalGun.tscn")
 var portal_type = Portal2.Type.PORTAL_A
-
 var can_move = true
-
 var facing_right = true
 
 
