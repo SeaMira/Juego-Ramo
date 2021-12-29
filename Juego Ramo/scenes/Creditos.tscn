@@ -23,7 +23,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("credit1:modulate")
+tracks/1/path = NodePath("dev:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -35,7 +35,7 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("credit2:modulate")
+tracks/2/path = NodePath("sprites:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -82,6 +82,18 @@ tracks/5/keys = {
 "update": 0,
 "values": [ -15.0 ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("sprites2:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
 
 [sub_resource type="Animation" id=3]
 resource_name = "slide"
@@ -105,13 +117,13 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0.6, 1.9, 2.9, 17.8, 18.9, 20 ),
+"times": PoolRealArray( 0.6, 1.9, 2.9, 20.1, 21.2, 22.3 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("credit1:modulate")
+tracks/2/path = NodePath("dev:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -123,7 +135,7 @@ tracks/2/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("credit2:modulate")
+tracks/3/path = NodePath("sprites:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -141,7 +153,7 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 9.1, 9.7, 11.3, 12 ),
+"times": PoolRealArray( 0, 12.3, 13, 14.7, 15.4 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
@@ -153,7 +165,7 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 12.3, 13, 14.7, 15.4 ),
+"times": PoolRealArray( 0, 15.7, 16.4, 18.1, 18.8 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
@@ -165,17 +177,29 @@ tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = false
 tracks/6/keys = {
-"times": PoolRealArray( 17.9, 18.6, 19.3, 20 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 22.4, 23.1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ -15.0, -45.0, -60.0, -80.0 ]
+"values": [ -15.0, -45.0 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("sprites2:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 9.1, 9.7, 11.3, 12 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
 [node name="Creditos" type="Node2D"]
 script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 741.822, 378.087 )
+position = Vector2( 859.865, 378.087 )
 scale = Vector2( 1.59756, 1.67673 )
 texture = ExtResource( 2 )
 
@@ -215,7 +239,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="credit1" type="Label" parent="."]
+[node name="dev" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 144.0
 margin_top = 50.0
@@ -226,24 +250,26 @@ custom_fonts/font = ExtResource( 6 )
 text = "
 Outrun Space War
 
-Tilesets:
+Story created by Gustavo Varas
 
-\"Neo Zero Cyberpunk City Tileset\" by yanin
- (https://yunusyanin.itch.io/neo-zero-cyberpunk-city-tileset)
+Developers:
 
-\"MicroRoguelike - SCI-FI 1 by Tazmoe\"
-(https://tazmoe.itch.io/mcr-sci-fi-1)
+Magdalena Álvarez
+Esperanza Díaz
+Sebastián Mira
+Gustavo Varas
 
-Fonts:
+Special Thanks to:
 
-\"Bit Font\" by https://fontesk.com/bit-font/
-(https://fontesk.com/bit-font/)"
+Sebastián Mira, Christopher \"PuntitOwO\" Marín & Elías Zelada
+"
 align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="credit2" type="Label" parent="."]
+[node name="sprites" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 142.0
 margin_top = 50.0
@@ -254,20 +280,46 @@ custom_fonts/font = ExtResource( 6 )
 text = "
 Sprites:
 
-\"Dark Soldier Rework\"
-Created by Stephen Challener (Redshrike), johnny_automatic,
- & Jordan Irwin (AntumDeluge). 
-Original dark soldier sprite commissioned by Bertram. 
-(https://opengameart.org/content/dark-soldier-rework)
-
 \"32x32 2D Portal Asset Pack\"
 Created by PixelZoink with help from actuallyKron  
 (https://actuallykron.itch.io/32x32-2d-portal-asset-pack)
 
 \"Grun\" by Sebastián Mira
 
-\"Mavi\" by Magdalena Álvarez"
+\"Mavi\" by Magdalena Álvarez
+
+\"Fire Bullet 16x16\" by blackdragon1727
+(https://blackdragon1727.itch.io/pixel-bullet-16x16)
+
+\"Modern Fantasy JRPG Character Sprites\" by Spriter Theo
+(https://spriter-theo.itch.io/modern-fantasy-jrpg-character-sprites)"
 align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sprites2" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 142.0
+margin_top = 50.0
+margin_right = 1140.0
+margin_bottom = 572.0
+custom_colors/font_color_shadow = Color( 0.117647, 0.721569, 0.862745, 1 )
+custom_fonts/font = ExtResource( 6 )
+text = "
+\"Dark Soldier Rework\"
+Created by Stephen Challener (Redshrike), johnny_automatic,
+ & Jordan Irwin (AntumDeluge). 
+Original dark soldier sprite commissioned by Bertram. 
+(https://opengameart.org/content/dark-soldier-rework)
+
+Backgrounds:
+
+\"Pixel Space Background Generator\" by Deep-Fold
+(https://deep-fold.itch.io/space-background-generator)"
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -280,24 +332,23 @@ margin_right = 1140.0
 margin_bottom = 642.0
 custom_colors/font_color_shadow = Color( 0.117647, 0.721569, 0.862745, 1 )
 custom_fonts/font = ExtResource( 6 )
-text = "
-\"Fire Bullet 16x16\" by blackdragon1727
-(https://blackdragon1727.itch.io/pixel-bullet-16x16)
+text = "Tilesets:
 
-\"Modern Fantasy JRPG Character Sprites\" by Spriter Theo
-(https://spriter-theo.itch.io/modern-fantasy-jrpg-character-sprites)
+\"Neo Zero Cyberpunk City Tileset\" by yanin
+ (https://yunusyanin.itch.io/neo-zero-cyberpunk-city-tileset)
 
-Backgrounds:
+\"MicroRoguelike - SCI-FI 1 by Tazmoe\"
+(https://tazmoe.itch.io/mcr-sci-fi-1)
 
-\"Pixel Space Background Generator\" by Deep-Fold
-(https://deep-fold.itch.io/space-background-generator)
+Fonts:
 
-Music:
+\"Bit Font\" by Dávid Fucsku
+(https://fontesk.com/bit-font/)
 
-\"Race to Mars\" by DOS88
-(https://dos88.itch.io/dos-88-music-library)
-"
+\"Videophreak\" by Pizzadude
+(https://www.dafont.com/videophreak.font) "
 align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -311,22 +362,23 @@ margin_bottom = 607.0
 custom_colors/font_color_shadow = Color( 0.117647, 0.721569, 0.862745, 1 )
 custom_fonts/font = ExtResource( 6 )
 text = "
+Music:
+
+\"Race to Mars\" by DOS88
+(https://dos88.itch.io/dos-88-music-library)
+
 \"Menu\" by Goose Ninja
+\"Battle\" by Goose Ninja
+\"Slow Travel\" by Goose Ninja
 (https://gooseninja.itch.io/space-music-pack) 
 
-Story created by Gustavo Varas
+\"Cactusdude - Endgame\" by Chiphead64
+(https://chiphead64.itch.io/intense-game-soundtrack)
 
-Developers:
-
-Magdalena Álvarez
-Esperanza Díaz
-Sebastián Mira
-Gustavo Varas
-
-Special Thanks to:
-
-Christopher \"PuntitOwO\" Marín & Elías Zelada"
+\"Spaceship\" by jhaeka
+(https://joshuuu.itch.io/short-loopable-background-music)"
 align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }

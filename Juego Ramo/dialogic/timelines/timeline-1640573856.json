@@ -70,7 +70,7 @@
 			"character": "character-1640307376.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Tus ¿qué? No me dejes con la duda."
+			"text": "¿Tus qué? No me dejes con la duda."
 		},
 		{
 			"character": "character-1640307363.json",
@@ -88,7 +88,7 @@
 			"character": "character-1640307363.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Mavi, parece que quería entregarnos su nave. Vamos. Debe estar cerca."
+			"text": "Mavi, parece que quería entregarnos su nave. Vamos, debe estar cerca."
 		},
 		{
 			"change_scene": "res://scenes/main2.tscn",

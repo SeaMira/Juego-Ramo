@@ -6,7 +6,7 @@ func _on_Area2D_body_entered(body):
 		player_cant+=1
 		
 	if player_cant == 2:
-		get_tree().change_scene("res://scenes/mapa32-5.tscn")
+		get_tree().change_scene("res://scenes/inicioPelea.tscn")
 
 func _on_Area2D_body_exited(body):
 	if body.is_in_group("player"):
