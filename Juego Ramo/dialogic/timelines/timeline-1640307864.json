@@ -20,7 +20,7 @@
 			"character": "character-1640307376.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Suenan como  naves imperiales! Igual que el dia que llegaron a mi planeta natal."
+			"text": "¡Suenan como naves imperiales! Igual que el día que llegaron a mi planeta natal."
 		},
 		{
 			"choice": "El imperio esta aquí",
@@ -33,7 +33,7 @@
 			"character": "character-1640307376.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Oh no, el imperio otra vez no, todavia duele lo que hicieron en mi hogar."
+			"text": "¡Oh no, el Imperio otra vez no! Todavía duele lo que hicieron en mi hogar."
 		},
 		{
 			"event_id": "dialogic_013"
@@ -48,7 +48,7 @@
 			"character": "character-1640307376.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Cuidado ahí viene uno, toma!!  con estos portales nos sera más facil."
+			"text": "¡¡Cuidado ahí viene uno, toma!!  Con estos portales nos será más fácil."
 		},
 		{
 			"change_scene": "res://scenes/Main.tscn",

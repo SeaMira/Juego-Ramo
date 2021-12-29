@@ -15,6 +15,3 @@ func _ready():
 	camera1.target = world.get_node("Player 1")
 	camera2.target = world.get_node("Player 2")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

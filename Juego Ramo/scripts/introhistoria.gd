@@ -2,11 +2,11 @@ extends Node2D
 
 var messages = [
 	"Han pasado siglos desde que existió paz en la galaxia.",
-	"Ahora no es más que un lejano recuerdo,", 
-	"el ataque de la raza Kaaway, y sus aliados del Imperio Intergaláctico de los Sor cada vez suma más adherentes.",
+	"Ahora no es más que un lejano recuerdo.", 
+	"El ataque de la raza Kaaway, y sus aliados del Imperio Intergaláctico de los Sor cada vez suma más adherentes.",
 	"Hoy una nave imperial se divisa en el planeta Kuro,",
 	"el último oasis de paz para refugiados de todos los rincones de la galaxia,",
-	"o así era ... hasta hoy..."
+	"o así era... hasta hoy..."
 	
 ]
 

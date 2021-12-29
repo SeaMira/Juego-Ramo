@@ -4,10 +4,11 @@ export var speed = 400  # How fast the player will move (pixels/sec).
 onready var playback = $AnimationTree.get("parameters/playback")
 
 var PortalGun = preload("res://scenes/PortalGun.tscn")
+var bullet = preload("res://scenes/Bullet2.tscn")
 var portal_type = Portal2.Type.PORTAL_A
 var can_move = true
 var facing_right = true
-
+export var escena2_5 = false
 
 
 func _physics_process(_delta):
@@ -51,13 +52,11 @@ func _physics_process(_delta):
 		$BulletSpawn.set_position(Vector2(0, 20.526))
 		
 	if Input.is_action_just_pressed("punch"):
-		weapon()
+		if !escena2_5:
+			weapon()
+		else:
+			laser()
 		
-#	if Input.is_action_just_pressed("punch"):
-#		if portal_type == Portal.Type.PORTAL_A:
-#			portal_type = Portal.Type.PORTAL_B
-#		elif portal_type == Portal.Type.PORTAL_B:
-#			portal_type = Portal.Type.PORTAL_A
 		
 func weapon():
 	var b = PortalGun.instance()
@@ -78,4 +77,10 @@ func weapon():
 			b.rotation = -PI/2
 		else:
 			b.rotation = PI
-		
+	
+func laser():
+	var dir = global_position.direction_to($Shoot.global_position)
+	var bala = bullet.instance()
+	bala.dir = dir
+	$Node.add_child(bala)
+	bala.global_position = global_position + dir * 55

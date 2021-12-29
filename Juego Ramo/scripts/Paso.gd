@@ -8,7 +8,7 @@ func _on_Paso_body_entered(body):
 		
 	if player_cant ==2:
 		get_tree().change_scene("res://scenes/Dialogointermedio.tscn")
-	pass # Replace with function body.
+	
 
 
 func _on_Paso_body_exited(body):

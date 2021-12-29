@@ -4,55 +4,55 @@
 			"character": "character-1640307376.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "GRUN!! AYUDAAAA!"
+			"text": "¡¡GRUN!! ¡AYUDAAAA!"
 		},
 		{
 			"character": "character-1640573911.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "shhh.. no grites"
+			"text": "Shhh... No grites"
 		},
 		{
 			"character": "character-1640307363.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "¿Que pasa Mavi?"
+			"text": "¿Qué pasa Mavi?"
 		},
 		{
 			"character": "character-1640307376.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Hay alguien herido aqui"
+			"text": "Hay alguien herido aquí."
 		},
 		{
 			"character": "character-1640573911.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Tranquilos, lamentablemente no hay mucho que hacer"
+			"text": "Tranquilos. Lamentablemente no hay mucho que hacer."
 		},
 		{
 			"character": "character-1640573876.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ya he aceptado mi destino, soy un Soldado de la Republica, o lo que queda de ella"
+			"text": "Ya he aceptado mi destino. Soy un Soldado de la Republica, o lo que queda de ella."
 		},
 		{
 			"character": "character-1640307376.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "¿Que hacemos Grun? No podemos dejarlo aqui tirado"
+			"text": "¿Qué hacemos Grun? No podemos dejarlo aquí tirado."
 		},
 		{
 			"character": "character-1640573876.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Tranquilo buen joven, no importa ya he vivido lo suficiente, y estas heridas no son del tipo que se recuperan. "
+			"text": "Tranquilo buen joven, no importa. Ya he vivido lo suficiente, y estas heridas no son del tipo que se recuperan. "
 		},
 		{
 			"character": "character-1640573876.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "¿Que hacen en una zona tan peligrosa dos jovenes sin entrenamiento?"
+			"text": "¿Qué hacen en una zona tan peligrosa dos jovenes sin entrenamiento?"
 		},
 		{
 			"character": "character-1640307363.json",
@@ -64,31 +64,31 @@
 			"character": "character-1640573876.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ahh ya veo, toma tomen mis ...."
+			"text": "Ahh ya veo, tomen mis...."
 		},
 		{
 			"character": "character-1640307376.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Tus ¿que?  no me dejes con la duda"
+			"text": "Tus ¿qué? No me dejes con la duda."
 		},
 		{
 			"character": "character-1640307363.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Mavi, creo que ya no esta con nosotros"
+			"text": "Mavi, creo que ya no está con nosotros."
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Mavi y Grun se acercan al cadaver y encuentran una tarjeta de una nave espacial en su mano"
+			"text": "Mavi y Grun se acercan al Soldado y encuentran una tarjeta de una nave espacial en su mano."
 		},
 		{
 			"character": "character-1640307363.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Mavi, parece que queria entregarnos su nave, vamos debe estar cerca."
+			"text": "Mavi, parece que quería entregarnos su nave. Vamos. Debe estar cerca."
 		},
 		{
 			"change_scene": "res://scenes/main2.tscn",

@@ -4,19 +4,19 @@
 			"character": "character-1640307376.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Mira Grun, al fin!. La nave que menciono el soldado."
+			"text": "¡Mira Grun, al fin!. La nave que mencionó el soldado."
 		},
 		{
 			"character": "character-1640307376.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Podremos salir de aqui!!! "
+			"text": "¡¡¡Podremos salir de aquí!!!"
 		},
 		{
 			"character": "character-1640307363.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Mierda"
+			"text": "Oh rayos."
 		},
 		{
 			"character": "character-1640307376.json",
@@ -28,13 +28,13 @@
 			"character": "character-1640307363.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Mierda mierda mierda...."
+			"text": "No, no, no...."
 		},
 		{
 			"character": "character-1640307376.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "¿Que pasa Grun, no te gusta mi idea?"
+			"text": "¿Qué pasa Grun, no te gusta mi idea?"
 		},
 		{
 			"character": "character-1640307363.json",
@@ -46,19 +46,19 @@
 			"character": "character-1640307376.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "¿Que le pasa a la nave?"
+			"text": "¿Qué le pasa a la nave?"
 		},
 		{
 			"character": "character-1640307363.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Es unipersonal, solo uno de nosotros saldra de aqui, dejando el otro a su suerte."
+			"text": "Es unipersonal, solo uno de nosotros saldrá de aquí, dejando el otro a su suerte."
 		},
 		{
 			"character": "character-1640307376.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Mierda! Tan cerca, de nuestros sueños, de olvidarnos de esta guerra."
+			"text": "¡NO! Tan cerca, de nuestros sueños, de olvidarnos de esta guerra."
 		},
 		{
 			"character": "character-1640307376.json",
@@ -70,7 +70,7 @@
 			"character": "character-1640307363.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Ni lo creas, tu eres el que se subira a esa nave. Son tus sueños al fin y al cabo."
+			"text": "Ni lo creas, tú eres el que se subirá a esa nave. Son tus sueños al fin y al cabo."
 		},
 		{
 			"character": "",
@@ -79,7 +79,7 @@
 
 			],
 			"portrait": "",
-			"question": "¿Quien deberia subir a la nave y salvarse?"
+			"question": "¿Quién debería subir a la nave y salvarse?"
 		},
 		{
 			"choice": "Mavi",

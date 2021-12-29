@@ -11,6 +11,7 @@ onready var camera2 = $Viewports/ViewportContainer2/Viewport2/Camera2D
 onready var world = $"Viewports/ViewportContainer1/Viewport1/Mapa32"
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	print("main2")
 	viewport2.world_2d = viewport1.world_2d
 	camera1.target = world.get_node("Player 1")
 	camera2.target = world.get_node("Player 2")
