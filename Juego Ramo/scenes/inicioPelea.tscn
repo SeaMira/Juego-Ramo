@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/dialogic/Dialog.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/inicioPelea.png" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 644.485, 360.34 )
+scale = Vector2( 1.02027, 1.02252 )
+texture = ExtResource( 2 )
+
+[node name="Dialog" parent="." instance=ExtResource( 1 )]
+margin_left = 445.87
+margin_top = 434.214
+margin_right = 445.87
+margin_bottom = 434.214
+timeline = "timeline-1640810803.json"

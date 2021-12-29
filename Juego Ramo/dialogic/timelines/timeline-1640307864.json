@@ -7,7 +7,7 @@
 
 			],
 			"portrait": "",
-			"question": "Que esta pasando??"
+			"question": "¿Qué está pasando?"
 		},
 		{
 			"choice": "No estoy seguro",
@@ -23,7 +23,7 @@
 			"text": "¡Suenan como naves imperiales! Igual que el día que llegaron a mi planeta natal."
 		},
 		{
-			"choice": "El imperio esta aquí",
+			"choice": "El Imperio esta aquí",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",

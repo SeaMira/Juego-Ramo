@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cactusdude - endgame.mp3-307431adb9bc5117c9e8b740222d32ab.mp3str"
+
+[deps]
+
+source_file="res://assets/music/cactusdude - endgame.mp3"
+dest_files=[ "res://.import/cactusdude - endgame.mp3-307431adb9bc5117c9e8b740222d32ab.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -55,11 +55,23 @@ script = ExtResource( 5 )
 [node name="DarkSoldier" parent="Navigation2D3" instance=ExtResource( 4 )]
 position = Vector2( 8240.66, -2125.29 )
 
-[node name="DarkSoldier2" parent="Navigation2D3" instance=ExtResource( 4 )]
-position = Vector2( 8158.77, -2715.5 )
-
-[node name="DarkSoldier3" parent="Navigation2D3" instance=ExtResource( 4 )]
-position = Vector2( 8609.62, -2644.59 )
-
 [node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D3"]
+navpoly = SubResource( 3 )
+
+[node name="Navigation2D4" type="Navigation2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="DarkSoldier" parent="Navigation2D4" instance=ExtResource( 4 )]
+position = Vector2( 8100.66, -2600.29 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D4"]
+navpoly = SubResource( 3 )
+
+[node name="Navigation2D5" type="Navigation2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="DarkSoldier" parent="Navigation2D5" instance=ExtResource( 4 )]
+position = Vector2( 8550.66, -2600.29 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D5"]
 navpoly = SubResource( 3 )

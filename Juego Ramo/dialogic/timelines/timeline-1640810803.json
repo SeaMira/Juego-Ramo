@@ -1,0 +1,31 @@
+{
+	"events": [
+		{
+			"character": "character-1640307363.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¡Cuidado, vienen enemigos!"
+		},
+		{
+			"character": "character-1640307376.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¡OH! Retrocedamos y subamos por las escaleras que pasamos.\nDe seguro habrá algún arma allá."
+		},
+		{
+			"character": "character-1640307363.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¡Vamos!"
+		},
+		{
+			"change_scene": "res://scenes/mapa32-5.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1640810803.json",
+		"name": "inicioPelea"
+	}
+}
