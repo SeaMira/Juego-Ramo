@@ -8,7 +8,7 @@ onready var viewport1 = $Viewports/ViewportContainer1/Viewport1
 onready var viewport2 = $Viewports/ViewportContainer2/Viewport2
 onready var camera1 = $Viewports/ViewportContainer1/Viewport1/Camera2D
 onready var camera2 = $Viewports/ViewportContainer2/Viewport2/Camera2D
-onready var world = $"Viewports/ViewportContainer1/Viewport1/Mapa32"
+onready var world = $"Viewports/ViewportContainer1/Viewport1/Mapa32Final"
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print("main2")

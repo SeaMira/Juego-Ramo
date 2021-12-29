@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scripts/PortalGun.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://assets/32x32 Portal Asset Pack/portal5_spritesheet.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 24.2699, 8.11609 )
@@ -20,8 +20,10 @@ position = Vector2( 0.667435, 0 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 1.00113, -0.667393 )
-scale = Vector2( 0.781003, 0.270011 )
+position = Vector2( 0.707108, 0 )
+scale = Vector2( 1.49693, 0.506513 )
 texture = ExtResource( 2 )
+hframes = 7
+frame = 3
 
 [connection signal="body_entered" from="." to="." method="_on_PortalGun_body_entered"]

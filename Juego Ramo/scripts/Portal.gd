@@ -14,9 +14,9 @@ func set_type(value):
 	if not $Sprite:
 		return
 	if type == Type.PORTAL_A:
-		$Sprite.modulate = Color("239124")
+		$Sprite.modulate = Color("16ff00")
 	elif type == Type.PORTAL_B:
-		$Sprite.modulate = Color("0f299b")
+		$Sprite.modulate = Color("007aff")
 		
 		
 func _on_Portal_body_entered(body: Node):

@@ -6,8 +6,8 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 33.4163
 
-[node name="Bullet" type="KinematicBody2D"]
-collision_layer = 0
+[node name="Bullet2" type="KinematicBody2D" groups=["bullet"]]
+collision_layer = 512
 collision_mask = 0
 script = ExtResource( 2 )
 
@@ -16,12 +16,12 @@ scale = Vector2( 0.3, 0.3 )
 shape = SubResource( 1 )
 
 [node name="icon" type="Sprite" parent="."]
-position = Vector2( -0.374572, 0.0936432 )
-scale = Vector2( 2.12606, 1.7866 )
+position = Vector2( 0.093655, 1.03009 )
+scale = Vector2( 1.62272, 1.38861 )
 texture = ExtResource( 1 )
 hframes = 4
 vframes = 19
-frame = 20
+frame = 52
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
 

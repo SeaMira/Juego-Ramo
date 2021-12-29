@@ -32,7 +32,11 @@ func _on_Area2D_body_entered(body):
 	if body != self && body.is_in_group("player"):
 		in_area.append(body)
 		player = body
-	
+		
+func _on_Area2D2_bullet_entered(body):
+	if body != self && body.is_in_group("bullet"):
+		get_parent().get_parent().start_enemies -= 1
+		get_parent().queue_free()
 
 func _on_Area2D_body_exited(body):
 	var i = in_area.find(body)
@@ -49,3 +53,5 @@ func fire():
 func _on_Timer_timeout():
 	if player:
 		fire()
+
+	

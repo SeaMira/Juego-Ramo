@@ -1,0 +1,285 @@
+[gd_scene load_steps=41 format=2]
+
+[ext_resource path="res://characters/PNG/48x64/dark_soldier-overlord.png" type="Texture" id=1]
+[ext_resource path="res://scripts/DarkSoldier.gd" type="Script" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 7.43827
+
+[sub_resource type="Animation" id=2]
+resource_name = "Down"
+length = 0.8
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 7, 8, 7 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Idle down"
+length = 0.1
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 7 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Idle left"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 10 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "Idle right"
+length = 0.1
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 4 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "Idle up"
+length = 0.1
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 1 ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 0.8
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 9, 10, 11, 10 ]
+}
+
+[sub_resource type="Animation" id=8]
+length = 0.8
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 3, 4, 5, 4 ]
+}
+
+[sub_resource type="Animation" id=9]
+length = 0.8
+loop = true
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 1 ]
+}
+
+[sub_resource type="AnimationNodeAnimation" id=10]
+animation = "Down"
+
+[sub_resource type="AnimationNodeAnimation" id=11]
+animation = "Idle down"
+
+[sub_resource type="AnimationNodeAnimation" id=12]
+animation = "Idle down"
+
+[sub_resource type="AnimationNodeAnimation" id=13]
+animation = "Idle left"
+
+[sub_resource type="AnimationNodeAnimation" id=14]
+animation = "Idle right"
+
+[sub_resource type="AnimationNodeAnimation" id=15]
+animation = "Idle up"
+
+[sub_resource type="AnimationNodeAnimation" id=16]
+animation = "Left"
+
+[sub_resource type="AnimationNodeAnimation" id=17]
+animation = "Right"
+
+[sub_resource type="AnimationNodeAnimation" id=18]
+animation = "Up"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=19]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=20]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=21]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=22]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=23]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=24]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=25]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=26]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=27]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=28]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=29]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=30]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=31]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=32]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=33]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=34]
+
+[sub_resource type="AnimationNodeStateMachine" id=35]
+states/Down/node = SubResource( 10 )
+states/Down/position = Vector2( 253.681, 213.716 )
+"states/Idle down/node" = SubResource( 12 )
+"states/Idle down/position" = Vector2( 253.616, 131 )
+"states/Idle down 2/node" = SubResource( 11 )
+"states/Idle down 2/position" = Vector2( 250.852, 46.5679 )
+"states/Idle left/node" = SubResource( 13 )
+"states/Idle left/position" = Vector2( 66.4842, 46.2011 )
+"states/Idle right/node" = SubResource( 14 )
+"states/Idle right/position" = Vector2( 453.151, 46.5845 )
+"states/Idle up/node" = SubResource( 15 )
+"states/Idle up/position" = Vector2( 251.906, -38.037 )
+states/Left/node = SubResource( 16 )
+states/Left/position = Vector2( -92.1824, 46.9112 )
+states/Right/node = SubResource( 17 )
+states/Right/position = Vector2( 633.151, 54.3147 )
+states/Up/node = SubResource( 18 )
+states/Up/position = Vector2( 251.758, -126.778 )
+transitions = [ "Idle right", "Right", SubResource( 19 ), "Right", "Idle right", SubResource( 20 ), "Down", "Idle down", SubResource( 21 ), "Idle down", "Down", SubResource( 22 ), "Left", "Idle left", SubResource( 23 ), "Idle left", "Left", SubResource( 24 ), "Up", "Idle up", SubResource( 25 ), "Idle up", "Up", SubResource( 26 ), "Idle left", "Idle down 2", SubResource( 27 ), "Idle down 2", "Idle left", SubResource( 28 ), "Idle down", "Idle down 2", SubResource( 29 ), "Idle down 2", "Idle down", SubResource( 30 ), "Idle down 2", "Idle right", SubResource( 31 ), "Idle right", "Idle down 2", SubResource( 32 ), "Idle up", "Idle down 2", SubResource( 33 ), "Idle down 2", "Idle up", SubResource( 34 ) ]
+start_node = "Idle down 2"
+graph_offset = Vector2( -434.49, -72.9943 )
+
+[sub_resource type="AnimationNodeStateMachinePlayback" id=36]
+
+[sub_resource type="CircleShape2D" id=37]
+radius = 446.429
+
+[sub_resource type="CapsuleShape2D" id=38]
+radius = 51.2268
+height = 19.3984
+
+[node name="RedSoldier" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -2, 0 )
+scale = Vector2( 3, 3 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+hframes = 3
+vframes = 4
+frame = 7
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Down = SubResource( 2 )
+"anims/Idle down" = SubResource( 3 )
+"anims/Idle left" = SubResource( 4 )
+"anims/Idle right" = SubResource( 5 )
+"anims/Idle up" = SubResource( 6 )
+anims/Left = SubResource( 7 )
+anims/Right = SubResource( 8 )
+anims/Up = SubResource( 9 )
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 35 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/playback = SubResource( 36 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 37 )
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Area2D2" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 512
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+shape = SubResource( 38 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_bullet_entered"]

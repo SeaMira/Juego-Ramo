@@ -175,15 +175,15 @@ tracks/6/keys = {
 script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 301.046, 378.087 )
+position = Vector2( 741.822, 378.087 )
 scale = Vector2( 1.59756, 1.67673 )
 texture = ExtResource( 2 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = 147.0
-margin_top = 91.0
+margin_top = 50.0
 margin_right = 1144.0
-margin_bottom = 597.0
+margin_bottom = 650.0
 color = Color( 0.0941176, 0.133333, 0.207843, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -200,10 +200,10 @@ anims/RESET = SubResource( 5 )
 anims/slide = SubResource( 3 )
 
 [node name="back" type="Button" parent="."]
-margin_left = 1008.0
-margin_top = 560.0
-margin_right = 1228.0
-margin_bottom = 610.0
+margin_left = 1001.27
+margin_top = 613.878
+margin_right = 1221.27
+margin_bottom = 663.878
 custom_fonts/font = ExtResource( 6 )
 custom_styles/hover = ExtResource( 4 )
 custom_styles/pressed = ExtResource( 4 )
@@ -218,13 +218,12 @@ __meta__ = {
 [node name="credit1" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 144.0
-margin_top = 92.0
+margin_top = 50.0
 margin_right = 1142.0
-margin_bottom = 594.0
+margin_bottom = 607.0
 custom_colors/font_color_shadow = Color( 0.117647, 0.721569, 0.862745, 1 )
 custom_fonts/font = ExtResource( 6 )
 text = "
-
 Outrun Space War
 
 Tilesets:
@@ -233,8 +232,12 @@ Tilesets:
  (https://yunusyanin.itch.io/neo-zero-cyberpunk-city-tileset)
 
 \"MicroRoguelike - SCI-FI 1 by Tazmoe\"
+(https://tazmoe.itch.io/mcr-sci-fi-1)
 
-(https://tazmoe.itch.io/mcr-sci-fi-1)"
+Fonts:
+
+\"Bit Font\" by https://fontesk.com/bit-font/
+(https://fontesk.com/bit-font/)"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -243,23 +246,27 @@ __meta__ = {
 [node name="credit2" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 142.0
-margin_top = 92.0
+margin_top = 50.0
 margin_right = 1140.0
-margin_bottom = 594.0
+margin_bottom = 572.0
 custom_colors/font_color_shadow = Color( 0.117647, 0.721569, 0.862745, 1 )
 custom_fonts/font = ExtResource( 6 )
 text = "
-
 Sprites:
 
 \"Dark Soldier Rework\"
 Created by Stephen Challener (Redshrike), johnny_automatic,
  & Jordan Irwin (AntumDeluge). 
 Original dark soldier sprite commissioned by Bertram. 
-
 (https://opengameart.org/content/dark-soldier-rework)
 
-\"Grun\" by Sebastián Mira"
+\"32x32 2D Portal Asset Pack\"
+Created by PixelZoink with help from actuallyKron  
+(https://actuallykron.itch.io/32x32-2d-portal-asset-pack)
+
+\"Grun\" by Sebastián Mira
+
+\"Mavi\" by Magdalena Álvarez"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -268,12 +275,17 @@ __meta__ = {
 [node name="credit3" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 142.0
-margin_top = 92.0
+margin_top = 50.0
 margin_right = 1140.0
-margin_bottom = 594.0
+margin_bottom = 642.0
 custom_colors/font_color_shadow = Color( 0.117647, 0.721569, 0.862745, 1 )
 custom_fonts/font = ExtResource( 6 )
 text = "
+\"Fire Bullet 16x16\" by blackdragon1727
+(https://blackdragon1727.itch.io/pixel-bullet-16x16)
+
+\"Modern Fantasy JRPG Character Sprites\" by Spriter Theo
+(https://spriter-theo.itch.io/modern-fantasy-jrpg-character-sprites)
 
 Backgrounds:
 
@@ -284,8 +296,7 @@ Music:
 
 \"Race to Mars\" by DOS88
 (https://dos88.itch.io/dos-88-music-library)
-\"Menu\" by Goose Ninja
-(https://gooseninja.itch.io/space-music-pack) "
+"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -294,12 +305,16 @@ __meta__ = {
 [node name="credit4" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 margin_left = 142.0
-margin_top = 92.0
+margin_top = 50.0
 margin_right = 1140.0
-margin_bottom = 594.0
+margin_bottom = 607.0
 custom_colors/font_color_shadow = Color( 0.117647, 0.721569, 0.862745, 1 )
 custom_fonts/font = ExtResource( 6 )
 text = "
+\"Menu\" by Goose Ninja
+(https://gooseninja.itch.io/space-music-pack) 
+
+Story created by Gustavo Varas
 
 Developers:
 
@@ -310,8 +325,7 @@ Gustavo Varas
 
 Special Thanks to:
 
-Christopher \"PuntitOwO\" Marín
-Elías Zelada"
+Christopher \"PuntitOwO\" Marín & Elías Zelada"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false

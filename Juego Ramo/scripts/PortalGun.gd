@@ -47,39 +47,3 @@ func _portal_instance():
 	portal.global_position =  result.position
 	portal.rotation = result.normal.angle()
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-#func _manage_group(portal, group):
-#	for p in get_tree().get_nodes_in_group(group):
-#		p.queue_free()
-#	portal.add_to_group(group)
-	
-
-	
-	
-#	var shot = Vector2()
-#	shot.x = SPEED
-#	shot = move_and_collide(shot)
-#	if shot:
-#	   if shot.collider.name != "Area2D":
-#		   print("I collided with ", shot.collider.name)
-#		   queue_free()
-	   
