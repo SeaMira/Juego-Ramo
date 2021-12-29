@@ -7,6 +7,7 @@ func _ready():
 
 
 func _on_restart_pressed():
+	vida.life = vida.MAX_LIFE
 	get_tree().change_scene("res://scenes/Main.tscn") # Replace with function body.
 
 

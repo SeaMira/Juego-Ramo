@@ -44,6 +44,6 @@ func _portal_instance():
 				portal.type = portal_type
 				Manager.portal_b = portal
 				get_parent().add_child(portal)
-	portal.global_position =  result.position
+	portal.global_position = result.position
 	portal.rotation = result.normal.angle()
 	

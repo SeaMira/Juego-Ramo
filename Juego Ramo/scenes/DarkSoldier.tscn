@@ -230,6 +230,7 @@ graph_offset = Vector2( -434.49, -72.9943 )
 radius = 723.356
 
 [node name="DarkSoldier" type="KinematicBody2D"]
+collision_layer = 0
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
